@@ -1,5 +1,11 @@
 import warnings
+import os
 warnings.filterwarnings('ignore')
+
+# Disable wandb for Kaggle environment
+os.environ['WANDB_DISABLED'] = 'true'
+os.environ['WANDB_MODE'] = 'disabled'
+
 from ultralytics import YOLO
 
 if __name__ == '__main__':
