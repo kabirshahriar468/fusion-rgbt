@@ -3,8 +3,8 @@ warnings.filterwarnings('ignore')
 from ultralytics import YOLO
 
 if __name__ == '__main__':
-    model = YOLO(R'LLVIP_r20/LLVIP_r20-yolov8-RGBRGB6C-midfusion8/weights/best.pt')
-    model.val(data=r'ultralytics/cfg/datasets/LLVIP_r20.yaml',
+    model = YOLO(R'Bird_Detection_RGBT/bird-yolov10-RGBT-share/weights/best.pt')
+    model.val(data=r'ultralytics/cfg/datasets/bird_detection_RGBT.yaml',
               split='val',
               imgsz=640,
               batch=16,
@@ -12,6 +12,6 @@ if __name__ == '__main__':
               channels=4,
               # rect=False,
               # save_json=True, # if you need to cal coco metrice
-              project='runs/val/LLVIP_r20',
-              name='LLVIP_r20-yolov8n-no_pretrained',
+              project='runs/val',
+              name='bird-yolov10-RGBT-validationT',
               )
