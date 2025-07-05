@@ -9,7 +9,7 @@ if __name__ == '__main__':
                 cache=False,
                 imgsz=640,
                 epochs=10,
-                batch=16,
+                batch=2,
                 close_mosaic=5,
                 workers=2,
                 device='0',
