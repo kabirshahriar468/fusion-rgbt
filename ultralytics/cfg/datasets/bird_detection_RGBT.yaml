@@ -1,9 +1,9 @@
 # RGBT Bird Detection Dataset Configuration
 # For YOLO-MIF RGBT Training
 
-# Dataset paths - using relative paths from project root
-train: ./dataset/images/visible/train  # path to training images directory
-val: ./dataset/images/visible/val      # path to validation images directory
+# Dataset paths - using Kaggle datasets directory
+train: /kaggle/working/datasets/dataset/images/visible/train  # path to training images directory
+val: /kaggle/working/datasets/dataset/images/visible/val      # path to validation images directory
 
 # Number of classes
 nc: 2
