@@ -2,8 +2,8 @@
 # For YOLO-MIF RGBT Training
 
 # Dataset paths - using relative paths from project root
-train: ../../../train_data/images/visible/train  # path to training images list
-val: ../../../train_data/images/visible/val    # path to validation images (using same as train for now)
+train: ./train_data/images/visible/train  # path to training images list
+val: ./train_data/images/visible/val    # path to validation images (using same as train for now)
 
 # Number of classes
 nc: 2
